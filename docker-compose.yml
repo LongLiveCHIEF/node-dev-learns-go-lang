@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  chal1:
+    image: golang:1.7.5-alpine
+    volumes:
+      - ./chal1/:/go/src/chal1
+    working_dir: /go/src/chal1
+    command: go run main.go
