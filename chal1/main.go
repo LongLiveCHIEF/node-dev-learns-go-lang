@@ -1,9 +1,11 @@
 package main
 
 import (
-  "fmt"
+	"log"
+	"net/http"
 )
 
 func main() {
-  fmt.Println("Hello world")
+	// Simple static webserver:
+	log.Fatal(http.ListenAndServe(":12345", http.FileServer(http.Dir("/go/src/chal1"))))
 }

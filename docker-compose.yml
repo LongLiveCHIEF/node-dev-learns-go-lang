@@ -7,3 +7,5 @@ services:
       - ./chal1/:/go/src/chal1
     working_dir: /go/src/chal1
     command: go run main.go
+    ports:
+      - "127.0.0.1:12345:12345"
