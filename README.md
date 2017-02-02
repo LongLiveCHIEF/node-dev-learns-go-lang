@@ -21,3 +21,7 @@ port1: green
 port2: green
 port3: red
 ```
+## Challenge 3 - Create a command line REPL fuzzy file finder
+
+- [ ] typing `finder` drops into REPL mode with `find>` prompt
+- [ ] As you type characters, an autocomplete style list appears in terminal below the prompt
