@@ -1,0 +1,8 @@
+version: "2"
+
+services:
+  http_challenge:
+	  image: golang:1.7.5-alpine
+		volumes: 
+		  - .:/go/src/challenge1
+		working_dir: /go/src/challenge1
