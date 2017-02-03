@@ -25,3 +25,18 @@ port3: red
 
 - [ ] typing `finder` drops into REPL mode with `find>` prompt
 - [ ] As you type characters, an autocomplete style list appears in terminal below the prompt
+
+## Challenge 4 - Create a File System Cleanup Utility
+
+To get an idea of what this program should do, try running: (on *nix OS)
+
+```
+$ find $HOME -d type -maxdepth 1 -exec du -sh {} + |sort -nr
+$ find $HOME -f type -exec du -sh {} + |sort -nr
+$ find $HOME -size +1000k -exec du -sh {} + |sort -nr
+```
+
+- [ ] given a path, returns largest directories|files
+- [ ] can return unmodified files older than `x` days 
+- [ ] can report back on unused disk space and lv's
+- [ ] can report back on unmounted LV's or disks with no mounted filesystems
